@@ -1,0 +1,27 @@
+:root {
+    --primary-navbar-color: #03045e;
+
+    --primary-subtema-color: #023e8a;
+    --primary-txtsubtema-color: #ffffff;
+
+    --primary-algebra-color: #0077b6;
+    --primary-aritmetica-color: #00b4d8;
+    --primary-txbg-alg-color:rgb(255, 252, 252);
+    --primary-txbg-art-color:rgb(255, 255, 255);
+
+    --primary-bgboton-alg-color: #90e0ef;
+    --primary-bgboton-art-color: #023e8a;
+
+    --primary-botonbr-alg-color: #03045e;
+    --primary-botonbr-art-color: #ade8f4;
+    
+    --primary-txboton-alg-color:rgb(0, 0, 0);
+    --primary-txboton-art-color:rgb(255, 255, 255);
+
+    --primary-alert-art-color: #ade8f4;
+    --primary-alert-alg-color: #90e0ef;
+    --primary-txalert-alg-color:#03045e;
+    --primary-txalert-art-color:#03045e;
+
+
+}

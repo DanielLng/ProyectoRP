@@ -190,14 +190,14 @@ p{
 }
 
 #alert-art{
-    background-color: gray;
+    background-color: var(--primary-alert-art-color);
     font-weight: bold;
-    color: aliceblue;
+    color: var(--primary-txalert-art-color);
 }
 
 #alert-alg{
-    background-color: gainsboro;
+    background-color: var(--primary-alert-alg-color);
     font-weight: bold;
-    color: black;
+    color: var(--primary-txalert-alg-color);
     border: gainsboro;
 }

@@ -18,6 +18,12 @@
     --primary-txboton-alg-color:rgb(0, 0, 0);
     --primary-txboton-art-color:rgb(0, 0, 0);
 
+    --primary-alert-art-color: rgb(0, 0, 0);
+    --primary-alert-alg-color: rgb(255, 255, 255);
+    --primary-txalert-alg-color:rgb(0, 0, 0);
+    --primary-txalert-art-color:rgb(255, 255, 255);
+
+
 }
 
 /* Colores: 8*/
