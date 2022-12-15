@@ -490,6 +490,7 @@
   </div>
   <!---------------------------------------------------------------------------------------------------------------------------------------->
 
+  <script src="script.js"></script>
   <script>
     var popoverTriggerList = [].slice.call(
       document.querySelectorAll('[data-bs-toggle="popover"]')
@@ -498,20 +499,6 @@
       return new bootstrap.Popover(popoverTriggerEl);
     });
 
-    function initThemeSelector(){
-      const themeSelect = document.getElementById("themeSelect");
-      const themeSylesheetLink = document.getElementById("themeSylesheetLink");
-
-      function activateTheme(themeName){
-        themeSylesheetLink.setAttribute("href", `./temas/${themeName}.css`);
-      }
-
-      themeSelect.addEventListener("change", () => {
-        activateTheme(themeSelect.value);
-      })
-    }
-
-    initThemeSelector();
   </script>
 
   <script>
