@@ -1,0 +1,194 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+#preloader{
+  background: #00171f url(./assets/preloader1.gif) no-repeat center center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+
+
+/*-------------------------Portada---------------------------------*/
+#Cover {
+  background: url(./assets/Fondo\ 2.jpg) rgba(0, 0, 0, 0.8);
+  background-blend-mode: darken;
+  height: calc(100vh - 40px);
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+}
+
+#Title {
+  /*background-color: rgba(255, 255, 255, 0.06);*/
+  font-size: 400%;
+  /*font-weight: 900;*/
+  text-align: center;
+  margin-top: 5%;
+}
+.container{
+  text-align: center;
+}
+
+.container span{
+  font-size: 50pt;
+  position: relative;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+.container span::before{
+  content: var(--l);
+  position: absolute;
+  transform: scale(1.1);
+  filter: blur(15px);
+}
+
+.container span::after{
+  content: var(--l);
+  position: absolute;
+  top: 80%;
+  left: 0;
+  filter: blur(30px);
+  transform: rotateX('50deg');
+}
+
+.container span:hover{
+  filter: contrast(500%);
+}
+
+.container span:nth-child(1){
+  color: #09d2ff;
+}
+.container span:nth-child(2){
+  color: #cd39e1;
+}
+.container span:nth-child(3){
+  color: #09c2ff;
+}
+.container span:nth-child(4){
+  color: #f8873b;
+}
+
+#CoverText {
+  /*background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.06);*/
+  width: 30%;
+  text-align: center;
+  padding: 2%;
+  /*font-weight: 800;*/
+}
+
+#StartButton {
+  /*background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.06);
+  border: transparent;*/
+  color: black;
+  font-size: larger;
+  padding: 10px 10px;
+  margin-top: 10px;
+}
+
+#down_arrow {
+  transform: scale(3);
+  background-color: transparent;
+  margin-top: 50px;
+  color: #ffffff;
+}
+
+#down_arrow:hover {
+  cursor: pointer;
+}
+
+#collapsibleNavbar{
+  text-align: center;
+}
+/*--------------------------------------------Sección de Contenido------------------------------------------*/
+#Content{
+  background: #ffffff;
+}
+
+#Sb1{
+  background: #00171f;
+}
+
+#Sb2{
+  background-color: #003459;
+}
+
+#Sb3{
+  background-color: #007ea7;
+}
+
+#contentButton {
+  border-radius: 15px;
+  background-color: #ffffff;
+  border: none;
+  color: negro;
+  text-align: center;
+  font-size: 18px;
+  padding: 12px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 2px;
+}
+
+#contentButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#contentButton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#contentButton:hover span {
+  padding-right: 25px;
+}
+
+#contentButton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.slide{
+  position: relative;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: all 700ms ease-out;
+  -moz-transition: all 700ms ease-out;
+  transition: all 700ms ease-out;
+}
+
+.slide:target{
+  height: 100vh;
+}
+
+
+.back{
+  color: rgb(0, 0, 0);
+}

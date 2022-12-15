@@ -1,0 +1,21 @@
+:root {
+    --primary-navbar-color: #000000;
+
+    --primary-subtema-color: #111111;
+    --primary-txtsubtema-color: #ffffff;
+
+    --primary-algebra-color: #232323;
+    --primary-aritmetica-color: #343434;
+    --primary-txbg-alg-color:rgb(255, 255, 255);
+    --primary-txbg-art-color:rgb(255, 255, 255);
+
+    --primary-bgboton-alg-color: #464646;
+    --primary-bgboton-art-color: rgb(0, 0, 0);
+
+    --primary-botonbr-alg-color: #ffffff;
+    --primary-botonbr-art-color: rgb(255, 255, 255);
+    
+    --primary-txboton-alg-color:rgb(255, 255, 255);
+    --primary-txboton-art-color:rgb(255, 255, 255);
+
+}

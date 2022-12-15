@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+*{
+    font-family: 'Mulish', sans-serif;
+}
+
+body{
+    position: relative;
+}
+
+#Title{
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+
+#Title h1{
+    font-weight: bolder;
+}
+
+select{
+    padding: 5px;
+}
+
+#themeSelect{
+    background: rgba(245, 245, 245, 0.514);
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#navbar{
+    font-size: 15px;
+    /*background-color: #252422;*/
+    background-color: var(--primary-navbar-color);
+    color: black;
+}
+
+#Algebra1{
+    height: 42vh;
+    /*background-color: #ccc5b9;*/
+    background-color: var(--primary-algebra-color);
+    color: var(--primary-txbg-alg-color);
+}
+
+#Subtema11{
+    height: 42vh;
+    width: 100vw;
+}
+
+#Subtema12{
+    height: 42vh;
+    width: 100vw;
+}
+
+#Subtema1, #Subtema2, #Subtema3, #Subtema4{
+    /*background-color: #403d39;*/
+    background-color: var(--primary-subtema-color);
+    color: var(--primary-txtsubtema-color);
+}
+
+#subtema3sld2{
+    font-size: 50px;
+}
+
+#subtema31sld2{
+    font-size: 50px;
+}
+
+/*#subtema3btn{
+    width: 100px;
+}*/
+
+#Subtema2{
+    width: 100vw;
+}
+
+#subtema4btn{
+    min-width: 100px;
+}
+
+#Aritmética1{
+    height: 42vh;
+    /*background-color: #fffcf2;*/
+    background-color: var(--primary-aritmetica-color);
+    color: var(--primary-txbg-art-color);
+}
+
+#subtema4sld2{
+    font-size: 50px;
+}
+
+#subtema4sld2 button{
+    width: 80px;
+}
+
+#subtema41sld2{
+    font-size: 50px;
+}
+
+#subtema41sld2 button{
+    width: 80px;
+}
+
+#textsld3{
+    text-align: center;
+    font-weight: bold;
+}
+
+p{
+    text-align: center;
+}
+
+#bg-btn-alg{
+    background-color: var(--primary-bgboton-alg-color);
+    color: var(--primary-txboton-alg-color);
+    min-width: 100px;
+}
+
+#bg-btn-art{
+    background-color: var(--primary-bgboton-art-color);
+    color: var(--primary-txboton-art-color);
+    min-width: 100px;
+}
+
+#subtema4sld4{
+    font-size: 50px;
+}
+
+.boton-alg {
+    position: relative;
+}
+
+.boton-alg::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 2px solid var(--primary-botonbr-alg-color);
+        border-radius: 6px;
+        animation: clippath 4s infinite linear;
+    }
+
+@keyframes clippath {
+    0%,
+    100% {
+        clip-path: inset(0 0 95% 0);
+    }
+    25% {
+        clip-path: inset(0 95% 0 0);
+    }
+    50% {
+        clip-path: inset(95% 0 0 0);
+    }
+    75% {
+        clip-path: inset(0 0 0 95%);
+    }
+}
+
+.boton-art {
+    position: relative;
+}
+
+.boton-art::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 2px solid var(--primary-botonbr-art-color);
+        border-radius: 6px;
+        animation: clippath 5s infinite linear;
+    }
+
+@keyframes clippath {
+    0%,
+    100% {
+        clip-path: inset(0 0 95% 0);
+    }
+    25% {
+        clip-path: inset(0 95% 0 0);
+    }
+    50% {
+        clip-path: inset(95% 0 0 0);
+    }
+    75% {
+        clip-path: inset(0 0 0 95%);
+    }
+}
+
+#alert-art{
+    background-color: gray;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+#alert-alg{
+    background-color: gainsboro;
+    font-weight: bold;
+    color: black;
+    border: gainsboro;
+}

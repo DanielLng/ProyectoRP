@@ -1,0 +1,23 @@
+:root {
+    --primary-navbar-color: #252525;
+
+    --primary-subtema-color: #b6bbb7;
+    --primary-txtsubtema-color: #000000;
+
+    --primary-algebra-color: #c2bfba;
+    --primary-aritmetica-color: #d2cac0;
+    --primary-txbg-alg-color:rgb(0, 0, 0);
+    --primary-txbg-art-color:rgb(0, 0, 0);
+
+    --primary-bgboton-alg-color: #e3e4df;
+    --primary-bgboton-art-color: #e7e8e3;
+
+    --primary-botonbr-alg-color: #818181;
+    --primary-botonbr-art-color: #808080;
+    
+    --primary-txboton-alg-color:rgb(0, 0, 0);
+    --primary-txboton-art-color:rgb(0, 0, 0);
+
+}
+
+/* Colores: 8*/

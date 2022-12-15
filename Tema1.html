@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Introducción al Álgebra</title>
+  <link rel="stylesheet" href="styleTema1.css" />
+  <link rel="stylesheet" id="themeSylesheetLink" href="temas/default.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+  <div class="container-fluid p-3 d-flex justify-content-center" id="Title">
+    <h1 class="display-4">Tema 1. Introducción al álgebra</h1>
+  </div>
+
+  <nav class="navbar navbar-expand-sm navbar-dark sticky-top" id="navbar">
+    <div class="container-fluid d-flex justify-content-center">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="./index.html">
+            <i class="bi bi-house"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Subtema1">Diferencia entre el álgebra y la aritmética</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Subtema2">Ejemplos de problemas de álgebra y aritmética</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Subtema3">Expresiones matemáticas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Subtema4">Ejemplos de ecuaciones matemáticas</a>
+        </li>
+        <li class="nav-item">
+          <select class="nav-link" id="themeSelect">
+            <option value="default">Claro</option>
+            <option value="dark">Obscuro</option>
+          </select>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-smooth-scroll="true" class="scrollspy-example"
+    tabindex="0">
+
+    <div class="container-fluid" id="Subtema1">
+      <div class="pt-3 d-flex justify-content-center">
+        <h3>Diferencia entre el álgebra y la aritmética</h3>
+      </div>
+    </div>
+    <div class="row text-white" id="Subtema11">
+      <div class="col-6 pt-3 d-flex justify-content-center align-items-center" id="Algebra1">
+        <h3>Álgebra</h3>
+      </div>
+      <div class="col-6 pt-3 d-flex justify-content-center align-items-center" id="Aritmética1">
+        <h3>
+          Aritmética
+        </h3>
+      </div>
+    </div>
+    <div class="row" id="Subtema12">
+      <div class="col-6 pt-3 d-flex justify-content-center align-items-start" id="Algebra1">
+        <p>
+          Es la rama de las matemáticas en la que se usan letras para representar relaciones aritméticas.
+        </p>
+      </div>
+      <div class="col-6 pt-3 d-flex justify-content-center align-items-start" id="Aritmética1">
+        <p>
+          Es la rama de las matemáticas que estudia los números y las
+          operaciones que se hacen con ellos.
+        </p>
+      </div>
+    </div>
+
+    <div class="container-fluid" id="Subtema2">
+      <div class="pt-3 d-flex justify-content-center">
+        <h3>Ejemplos de problemas de álgebra y aritmética</h3>
+      </div>
+    </div>
+
+    <div class="row" id="Algebra1">
+      <div class="pt-3 d-flex justify-content-center align-items-center">
+        <h3>Álgebra</h3>
+      </div>
+      <div class="d-flex flex-column justify-content-center align-items-center">
+        <p>
+          José compró "x" manzanas y su hermano le regaló otras 17, ¿cuántas
+          manzanas tiene José en total?
+        </p>
+      </div>
+    </div>
+
+    <div class="row" id="Aritmética1">
+      <div class="pt-3 d-flex justify-content-center align-items-center">
+        <h3>Aritmética</h3>
+      </div>
+      <div class="d-flex flex-column justify-content-center align-items-center">
+        <p>
+          José compró 10 manzanas y su hermano le regaló otras 17, ¿cuántas
+          manzanas tiene José en total?
+        </p>
+        <div class="alert container d-flex justify-content-center" id="alert-art">
+          <strong>Estos enunciados se pueden representar con una expresión
+            matemática, usando solo números, letras y operadores
+            matemáticos.</strong>
+        </div>
+      </div>
+    </div>
+    <!----------------------------------------------------------------------------------------------------------------------->
+    <div class="container-fluid" id="Subtema3">
+      <div class="pt-3 d-flex justify-content-center">
+        <h3>Expresiones matemáticas</h3>
+      </div>
+    </div>
+
+    <div id="subtema3" class="carousel slide" data-bs-interval="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row" id="Algebra1">
+            <div class="pt-3 d-flex justify-content-center align-items-center">
+              <h3>Álgebra</h3>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <p>
+                José compró "x" manzanas y su hermano le regaló otras 17,
+                ¿cuántas manzanas tiene José en total?
+              </p>
+              <button type="button" class="btn boton-alg" data-bs-toggle="collapse" data-bs-target="#mostrar1" id="bg-btn-alg">
+                Mostrar expresión
+              </button>
+              <div id="mostrar1" class="collapse">
+                <br />
+                <p class="d-flex justify-content-center">x + 17</p>
+                <p>
+                  <strong>Ésta es una expresión algebraica</strong>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row" id="Algebra1">
+            <div class="pt-3 d-flex justify-content-center align-items-center">
+              <h3>Álgebra</h3>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <p>
+                José compró "x" manzanas y su hermano le regaló otras 17,
+                ¿cuántas manzanas tiene José en total?
+              </p>
+              <span id="subtema3sld2"><button type="button" class="btn boton-alg" data-bs-toggle="popover"
+                  data-bs-content="Manzanas que José compró" id="bg-btn-alg">
+                  x
+                </button>
+                +
+                <button type="button" class="btn boton-alg" data-bs-toggle="popover"
+                  data-bs-content="Manzanas que su hermano le regaló" id="bg-btn-alg">
+                  17
+                </button></span>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row" id="Algebra1">
+            <div class="pt-3 d-flex justify-content-center align-items-center">
+              <h3>Nota importante</h3>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <p>
+                Cuando a una expresión matemática se le incluye un signo
+                "igual", a la expresión se le denomina
+                <strong>"ecuación"</strong>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#subtema3" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true" id="prev-icon"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#subtema3" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+    <!---------------------------------------------------------------------------------------------------------------------------------------->
+
+    <div id="subtema31" class="carousel slide" data-bs-interval="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row" id="Aritmética1">
+            <div class="pt-3 d-flex justify-content-center align-items-center">
+              <h3>Aritmética</h3>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <p>
+                José compró 10 manzanas y su hermano le regaló otras 17,
+                ¿cuántas manzanas tiene José en total?
+              </p>
+              <button type="button" class="btn boton-art" data-bs-toggle="collapse" data-bs-target="#mostrar2" id="bg-btn-art">
+                Mostrar expresión
+              </button>
+              <div id="mostrar2" class="collapse">
+                <br />
+                <p class="d-flex justify-content-center">10 + 17</p>
+                <p>
+                  <strong>Ésta es una expresión aritmética</strong>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row" id="Aritmética1">
+            <div class="pt-3 d-flex justify-content-center align-items-center">
+              <h3>Aritmética</h3>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <p>
+                José compró 10 manzanas y su hermano le regaló otras 17,
+                ¿cuántas manzanas tiene José en total?
+              </p>
+              <span id="subtema31sld2"><button type="button" class="btn boton-art" data-bs-toggle="popover"
+                  data-bs-content="Manzanas que José compró" id="bg-btn-art">
+                  10
+                </button>
+                +
+                <button type="button" class="btn boton-art" data-bs-toggle="popover"
+                  data-bs-content="Manzanas que su hermano le regaló" id="bg-btn-art">
+                  17
+                </button></span>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row" id="Aritmética1">
+            <div class="pt-3 d-flex justify-content-center align-items-center">
+              <h3>Nota importante</h3>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <p>
+                Comúnmente, una <strong>"ecuación"</strong> se utiliza para
+                representar un total.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#subtema31" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#subtema31" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+    <!-------------------------------------------------------------------------------------------------------------->
+    <div class="container-fluid" id="Subtema4">
+      <div class="pt-3 d-flex justify-content-center">
+        <h3>Ejemplos de ecuaciones matemáticas</h3>
+      </div>
+    </div>
+
+    <div id="subtema4" class="carousel slide" data-bs-interval="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row" id="Algebra1">
+            <div class="pt-3 d-flex justify-content-center align-items-center">
+              <h3>Álgebra</h3>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <p>
+                Silvia tiene "y" chocolates y se comió 8, ¿cuántos chocolates
+                tiene Silvia en total?
+              </p>
+              <span id="subtema4sld1">
+                <button type="button" class="btn boton-alg" data-bs-toggle="popover" title="Expresión algebraica"
+                  data-bs-content="Silvia tiene ( y ) chocolates y se comió 8" id="bg-btn-alg">
+                  y - 8
+                </button>
+              </span>
+              <br />
+              <span id="subtema4sld11">
+                <button type="button" class="btn boton-alg" data-bs-toggle="popover" data-bs-content="Sí"
+                id="bg-btn-alg">
+                  ¿Se puede escribir una ecuación algebraica?
+                </button>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row" id="Algebra1">
+            <div class="pt-3 d-flex justify-content-center align-items-center">
+              <h3>Álgebra</h3>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <p>
+                Silvia tiene "y" chocolates y se comió 8, ¿cuántos chocolates tiene Silvia en total?
+              </p>
+              <span id="subtema4sld2"><button type="button" class="btn boton-alg" data-bs-toggle="popover"
+                  data-bs-content="Chocolates que tiene Silvia" id="bg-btn-alg">
+                  y
+                </button>
+                -
+                <button type="button" class="btn boton-alg" data-bs-toggle="popover"
+                  data-bs-content="Chocolates que se comió" id="bg-btn-alg">
+                  8
+                </button>
+                =
+                <button type="button" class="btn boton-alg" data-bs-toggle="popover" title="No es correcto"
+                  data-bs-content="Total de chocolates que tiene Silvia" id="bg-btn-alg">
+                  y
+                </button>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row" id="Algebra1">
+            <div class="pt-3 d-flex justify-content-center align-items-center">
+              <h3>Nota importante</h3>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center" >
+              <p id="textsld3">
+                En una expresión algebraica una misma variable debe representar lo mismo, <br /> por lo tanto si
+                queremos
+                representar dos cosas diferentes, necesitamos dos letras diferentes.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row" id="Algebra1">
+            <div class="pt-3 d-flex justify-content-center align-items-center">
+              <h3>Álgebra</h3>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <p>
+                Silvia tiene "y" chocolates y se comió 8, ¿cuántos chocolates tiene Silvia en total?
+              </p>
+              <span id="subtema4sld4"><button type="button" class="btn boton-alg" data-bs-toggle="popover"
+                  data-bs-content="Chocolates que tiene Silvia" id="bg-btn-alg">
+                  y
+                </button>
+                -
+                <button type="button" class="btn boton-alg" data-bs-toggle="popover"
+                  data-bs-content="Chocolates que se comió" id="bg-btn-alg">
+                  8
+                </button>
+                =
+                <button type="button" class="btn boton-alg" data-bs-toggle="popover" title="No es correcto"
+                  data-bs-content="Total de chocolates que tiene Silvia después de haberse comido 8" id="bg-btn-alg">
+                  m
+                </button>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row" id="Algebra1">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <h3>
+                Nota importante
+              </h3>
+              <div class="alert alert-primary container d-flex justify-content-center" id="alert-alg">
+                En una expresión algebrica siempre habrá letras, a las cuales se les denominan variables, incógnitas o
+                literales
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row" id="Algebra1">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <h3>
+                Notas importantes
+              </h3>
+              <div class="alert alert-primary container d-flex justify-content-center" id="alert-alg">
+                <span>El nombre de <strong>variable</strong> es porque su valor puede variar</span>
+              </div>
+              <div class="alert alert-primary container d-flex justify-content-center" id="alert-alg">
+                <span>También se les denomina <strong>incógnitas</strong> porque no se conoce su valor</span>
+              </div>
+              <div class="alert alert-primary container d-flex justify-content-center" id="alert-alg">
+                <span>Y la palabra <strong>literal</strong> es porque se representan con letras</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#subtema4" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#subtema4" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+    <!---------------------------------------------------------------------------------------------------------------------------------------->
+
+    <div id="subtema41" class="carousel slide" data-bs-interval="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row" id="Aritmética1">
+            <div class="pt-3 d-flex justify-content-center align-items-center">
+              <h3>Aritmética</h3>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <p>
+                Silvia tiene 15 chocolates y se comió 8, ¿cuántos chocolates
+                tiene Silvia en total?
+              </p>
+              <button type="button" class="btn boton-art" data-bs-toggle="popover" title="Expresión aritmética"
+                data-bs-content="15 - 8" id="bg-btn-art">
+                Silvia tiene 15 chocolates y compró 8
+              </button>
+              <br />
+              <button type="button" class="btn boton-art" data-bs-toggle="popover" title="Ecuación aritmética"
+                data-bs-content="15 - 8 = 7" id="bg-btn-art">
+                Cuando agregamos "¿Cuántos chocolates tiene Silvia en total?", <br /> la expresión se convierte en una
+                ecuación
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row" id="Aritmética1">
+            <div class="pt-3 d-flex justify-content-center align-items-center">
+              <h3>Aritmética</h3>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <p>
+                Silvia tiene 15 chocolates y se comió 8, ¿cuántos chocolates tienen Silvia en total?
+              </p>
+              <span id="subtema41sld2"><button type="button" class="btn boton-art" data-bs-toggle="popover"
+                  data-bs-content="Chcocolates que tiene Silvia" id="bg-btn-art">
+                  15
+                </button>
+                -
+                <button type="button" class="btn boton-art" data-bs-toggle="popover"
+                  data-bs-content="Chocolates que se comió" id="bg-btn-art">
+                  8
+                </button>
+                =
+                <button type="button" class="btn boton-art" data-bs-toggle="popover"
+                  data-bs-content="Total de chocolates que tiene Silvia" id="bg-btn-art">
+                  7
+                </button>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#subtema41" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#subtema41" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </div>
+  <!---------------------------------------------------------------------------------------------------------------------------------------->
+
+  <script>
+    var popoverTriggerList = [].slice.call(
+      document.querySelectorAll('[data-bs-toggle="popover"]')
+    );
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl);
+    });
+
+    function initThemeSelector(){
+      const themeSelect = document.getElementById("themeSelect");
+      const themeSylesheetLink = document.getElementById("themeSylesheetLink");
+
+      function activateTheme(themeName){
+        themeSylesheetLink.setAttribute("href", `./temas/${themeName}.css`);
+      }
+
+      themeSelect.addEventListener("change", () => {
+        activateTheme(themeSelect.value);
+      })
+    }
+
+    initThemeSelector();
+  </script>
+
+  <script>
+    function initThemeSelector(){
+      const themeSelect = document.getElementById("themeSelect");
+      const themeSylesheetLink = document.getElementById("themeSylesheetLink");
+      const currentTheme = localStorage.getItem("theme") || "default";
+
+      function activateTheme(themeName){
+        themeSylesheetLink.setAttribute("href", `/temas/${themeName}.css`);
+      }
+
+      themeSelect.addEventListener("change", () => {
+        activateTheme(themeSelect.value);
+        localStorage.setItem("theme", themeSelect.value);
+      });
+
+      activateTheme(currentTheme)
+    }
+
+    initThemeSelector();
+  </script>
+</body>
+
+</html>

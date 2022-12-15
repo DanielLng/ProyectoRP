@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <title>Aprendizaje Lúdico de Álgebra</title>
+</head>
+
+<body>
+<div id="preloader">
+  
+</div>
+
+  <header id="Cover" class="slide">
+<!--
+    <h1 id="Title">
+      <span>Aprendizaje Lúdico de Álgebra</span>
+    </h1>
+    -->
+    <div class="container">
+      <span style="--l: 'Aprendizaje';">Aprendizaje </span>
+      <span style="--l: 'Lúdico';">Lúdico </span>
+      <span style="--l: 'de';">de </span>
+      <span style="--l: 'Álgebra';">Álgebra</span>
+    </div>
+    <p id="CoverText">Una forma sencilla de aprender</p>
+    <a href="./NotFound.html">    <button type="button" class="btn btn-outline-info btn-lg">Empezar</button></a>
+
+    <a href="#Content" class="next" id="down_arrow">   
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+      </svg>
+    </a>
+
+  </header>
+
+  <div id="Content" class="slide">
+    <div class="container-fluid p-4 d-flex justify-content-center align-items-center text-dark" id="ContentTitle">
+      <p class="h2 my-3">Contenido</p>
+      <a href="#Cover" class="back">   
+        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="30" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+          <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="row text-light" id="Sb1">
+      <div class="col-md-6 p-4 my-2 d-flex justify-content-center align-items-center">
+        <p class="h3">Introducción al álgebra</p>
+      </div>
+      <div class="col-md-6 p-4 my-2 d-flex justify-content-center" id="content-text">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci sed
+          unde magnam quo perferendis aperiam. <br />
+          <br />
+          <a href="./Tema1.html" class="btn btn-light" id="contentButton"><span>Ir a la lección</span></a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row text-light" id="Sb2">
+      <div class="col-md-6 p-4 my-2 d-flex justify-content-center align-items-center">
+        <p class="h3">Elementos de una expresión algebraica</p>
+      </div>
+      <div class="col-md-6 p-4 my-2 d-flex justify-content-center" id="content-text">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci sed
+          unde magnam quo perferendis aperiam. <br />
+          <br />
+          <a href="./Tema1.html" class="btn btn-light disabled" id="contentButton"><span>Ir a la lección</span></a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row text-light" id="Sb3">
+      <div class="col-md-6 p-4 my-2 d-flex justify-content-center align-items-center">
+        <p class="h3">Traducción de expresiones algebraicas</p>
+      </div>
+      <div class="col-md-6 p-4 my-2 d-flex justify-content-center" id="content-text">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci sed
+          unde magnam quo perferendis aperiam. <br />
+          <br />
+          <a href="./Tema1.html" class="btn btn-light disabled" id="contentButton"><span>Ir a la lección</span></a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+<script>
+  function typeEffect(element, speed) {
+    var text = element.innerHTML;
+    element.innerHTML = "";
+     var i = 0;
+
+     var timer = setInterval(function() {
+    if (i < text.length) {
+      element.append(text.charAt(i));
+      i++;
+    } else {
+      clearInterval(timer);
+    }
+  }, speed);
+}
+
+
+// application
+var speed = 75;
+var p = document.querySelector('#CoverText');
+
+
+
+// type affect to body
+setTimeout(function(){
+  p.style.display = "inline-block";
+  typeEffect(p, speed);
+});
+
+
+</script>
+
+<script>
+
+var loader = document.getElementById("preloader");
+
+window.addEventListener("load", function(){
+  loader.style.display = "none";
+
+})
+
+</script>
+
+</body>
+
+</html>
