@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introducción al Álgebra</title>
+    <link rel="stylesheet" href="styleTema2.css" />
+    <link rel="stylesheet" id="themeSylesheetLink" href="temas/default.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+    <div class="container-fluid p-3 d-flex justify-content-center" id="Title">
+        <h1 class="display-4">Tema 3. Traducción de expresiones algebraicas</h1>
+    </div>
+
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top" id="navbar">
+        <div class="container-fluid d-flex justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="./index.html">
+                        <i class="bi bi-house"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Subtema1">Interpretacion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Subtema2">Ejemplos de traducción de expresiones</a>
+                </li>
+                <li class="nav-item">
+                    <select class="nav-link" id="themeSelect">
+                        <option value="default">Claro</option>
+                        <option value="dark">Obscuro</option>
+                        <option value="blue">Azul</option>
+                        <option value="purple">Morado</option>
+                        <option value="colors1">Colores 1</option>
+                        <option value="blue/green">Azul/Verde</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-smooth-scroll="true" class="scrollspy-example"
+        tabindex="0">
+
+        <div class="container-fluid" id="Subtema1">
+            <div class="pt-3 d-flex justify-content-center">
+                <h3>Interpretación</h3>
+            </div>
+        </div>
+
+        <div class="row" id="Section1">
+            <div class="d-flex justify-content-center align-items-center" id="container-table">
+                <table class="container table table-bordered" id="Table">
+                    <thead>
+                        <tr>
+                            <th>Operación</th>
+                            <th>Frases</th>
+                            <th>Expresión algebraica</th>
+                        </tr>
+                    </thead>
+                    <tbody style="font-weight: bold;">
+                        <tr>
+                            <td style="font-size:larger;">+ <br>( Suma )</td>
+                            <td>
+                                1. Un número más 5. <br>
+                                2. Sumar 5 a un número. <br>
+                                3. Suma de un número y 5. <br>
+                                4. 5 más que un número. <br>
+                                5. Un número aumentado en 5.
+                            </td>
+                            <td style="font-size:larger;">
+                                n + 5
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-size:larger;">- <br>
+                                ( Resta )</td>
+                            <td>
+                                1. Un número menos de 11. <br>
+                                2. Restar 11 a un número. <br>
+                                3. Diferencia entre un número y 11 <br>
+                                4. 11 menos que un número <br>
+                                5. Un número disminuido en 11.
+                            </td>
+                            <td>
+                                x - 11
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-size:larger;">*
+                                <br>
+                                ( Producto )
+                            </td>
+                            <td>
+                                1. 3 veces un número. <br>
+                                2. 3 veces multiplicado por un número. <br>
+                                3. El producto de 3 y un número.
+                            </td>
+                            <td>
+                                3c
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-size:larger;">/ <br>
+                                ( División )</td>
+                            <td>
+                                1. Un número divido entre 7. <br>
+                                2. La séptima parte de un número. <br>
+                                3. El cociente de un número y 7.
+                            </td>
+                            <td>
+                                b / 7
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+
+        <!---------------------------------------------------------------------------------------------------------------------------------------->
+        <div class="container-fluid" id="Subtema2">
+            <div class="pt-3 d-flex justify-content-center">
+                <h3>Ejemplos de traducción de expresiones</h3>
+            </div>
+
+            <div id="subtema2" class="carousel slide" data-bs-interval="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container-fluid d-flex align-items-center justify-content-center" id="Section2">
+
+                            <div class="d-flex flex-column">
+                                <button type="button" class="btn boton-alg" data-bs-toggle="collapse"
+                                    data-bs-target="#mostrar1" id="bg-btn-alg">
+                                    Uno restado a un número
+                                </button>
+                                <div id="mostrar1" class="collapse">
+                                    <p>
+                                        <strong>Expresión algebraica</strong> <br><br>
+                                        n - 1
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-column">
+                                <button type="button" class="btn boton-alg" data-bs-toggle="collapse"
+                                    data-bs-target="#mostrar2" id="bg-btn-alg">
+                                    Restar uno a un número
+                                </button>
+                                <div id="mostrar2" class="collapse">
+                                    <p>
+                                        <strong>Expresión algebraica</strong><br><br>
+                                        n - 1
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="carousel-item">
+                        <div class="row container-fluid" id="Section2">
+                            <div class="d-flex justify-content-center align-items-center" id="Sb3Sld1">
+                                <h3 style="text-align: center;">
+                                    Frase: <br>
+                                    La diferencia entre el doble de un número y la quinta parte del número al cuadrado
+                                </h3>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center">
+
+                                <div class="d-flex flex-column">
+                                    <button type="button" class="btn boton-alg" data-bs-toggle="collapse"
+                                        data-bs-target="#mostrar3" id="bg-btn-alg">
+                                        2
+                                    </button>
+                                    <div id="mostrar3" class="collapse">
+                                        <p>
+                                            <strong>El doble</strong>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex flex-column">
+                                    <button type="button" class="btn boton-alg" data-bs-toggle="collapse"
+                                        data-bs-target="#mostrar4" id="bg-btn-alg">
+                                        *n
+                                    </button>
+                                    <div id="mostrar4" class="collapse">
+                                        <p>
+                                            <strong>De un número</strong>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex flex-column">
+                                    <button type="button" class="btn boton-alg" data-bs-toggle="collapse"
+                                        data-bs-target="#mostrar5" id="bg-btn-alg">
+                                        -
+                                    </button>
+                                    <div id="mostrar5" class="collapse">
+                                        <p>
+                                            <strong>Diferencia</strong>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex flex-column">
+                                    <button type="button" class="btn boton-alg d-flex justify-content-center pt-4"
+                                        data-bs-toggle="collapse" data-bs-target="#mostrar6" id="bg-btn-alg">
+                                        <p><math class="wrs_chemistry" xmlns="http://www.w3.org/1998/Math/MathML">
+                                                <msup>
+                                                    <mi mathvariant="normal">n</mi>
+                                                    <mn>2</mn>
+                                                </msup>
+                                            </math></p>
+                                    </button>
+                                    <div id="mostrar6" class="collapse">
+                                        <p>
+                                            <strong>Del número al cuadrado</strong>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex flex-column">
+                                    <button type="button" class="btn boton-alg" data-bs-toggle="collapse"
+                                        data-bs-target="#mostrar7" id="bg-btn-alg">
+                                        / 5
+                                    </button>
+                                    <div id="mostrar7" class="collapse">
+                                        <p>
+                                            <strong>La quinta parte</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center" style="text-align: center;">
+                                <span>
+                                <h5 style="font-weight: bold;">Expresión algebraica</h5> <br>
+                                <h4>
+                                    <math class="wrs_chemistry" xmlns="http://www.w3.org/1998/Math/MathML">
+                                        <msup>
+                                          <mi>
+                                            2n -
+                                          </mi>
+                                        </msup>
+                                        <msup>
+                                          <mi mathvariant="normal"> n</mi>
+                                          <mn>2</mn>
+                                        </msup>
+                                        <msup>
+                                          <mi mathvariant="normal">/ 5</mi>
+                                        </msup>
+                                      </math>
+                                </h4>
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row container-fluid" id="Section2">
+                            <div class="d-flex justify-content-center align-items-center" id="Sb3Sld1">
+                                <h3 style="text-align: center;">
+                                    Frase: <br>
+                                    La suma de la mitad de dos números diferentes
+                                </h3>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center">
+
+                                <div class="d-flex flex-column">
+                                    <button type="button" class="btn boton-alg" data-bs-toggle="collapse"
+                                        data-bs-target="#mostrar8" id="bg-btn-alg">
+                                        x
+                                    </button>
+                                    <div id="mostrar8" class="collapse">
+                                        <p>
+                                            <strong>Un número</strong>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex flex-column">
+                                    <button type="button" class="btn boton-alg" data-bs-toggle="collapse"
+                                        data-bs-target="#mostrar9" id="bg-btn-alg">
+                                        / 2
+                                    </button>
+                                    <div id="mostrar9" class="collapse">
+                                        <p>
+                                            <strong>La mitad</strong>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex flex-column">
+                                    <button type="button" class="btn boton-alg" data-bs-toggle="collapse"
+                                        data-bs-target="#mostrar10" id="bg-btn-alg">
+                                        +
+                                    </button>
+                                    <div id="mostrar10" class="collapse">
+                                        <p>
+                                            <strong>Suma</strong>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex flex-column">
+                                    <button type="button" class="btn boton-alg d-flex justify-content-center pt-4"
+                                        data-bs-toggle="collapse" data-bs-target="#mostrar11" id="bg-btn-alg">
+                                        <p><math class="wrs_chemistry" xmlns="http://www.w3.org/1998/Math/MathML">
+                                                <msup>
+                                                    <mi mathvariant="normal">y</mi>
+                                                </msup>
+                                            </math></p>
+                                    </button>
+                                    <div id="mostrar11" class="collapse">
+                                        <p>
+                                            <strong>De otro número</strong>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex flex-column">
+                                    <button type="button" class="btn boton-alg" data-bs-toggle="collapse"
+                                        data-bs-target="#mostrar12" id="bg-btn-alg">
+                                        / 2
+                                    </button>
+                                    <div id="mostrar12" class="collapse">
+                                        <p>
+                                            <strong>La mitad</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center" style="text-align: center;">
+                                <span>
+                                <h5 style="font-weight: bold;">Expresión algebraica</h5> <br>
+                                <h4>
+                                    <math class="wrs_chemistry" xmlns="http://www.w3.org/1998/Math/MathML">
+                                        <msup>
+                                          <mi>
+                                            x / 2 +
+                                          </mi>
+                                        </msup>
+                                        <msup>
+                                          <mi mathvariant="normal"> y / 2</mi>
+                                        </msup>
+                                      </math>
+                                </h4>
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row container-fluid" id="Section2">
+                            <div class="d-flex justify-content-center align-items-center" id="Sb3Sld1">
+                                <h3 style="text-align: center;">
+                                    Frase: <br>
+                                    El producto entre el doble de un número y la tercera parte de su consecutivo
+                                </h3>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center">
+
+                                <div class="d-flex flex-column">
+                                    <button type="button" class="btn boton-alg" data-bs-toggle="collapse"
+                                        data-bs-target="#mostrar13" id="bg-btn-alg">
+                                        2
+                                    </button>
+                                    <div id="mostrar13" class="collapse">
+                                        <p>
+                                            <strong>El doble</strong>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex flex-column">
+                                    <button type="button" class="btn boton-alg" data-bs-toggle="collapse"
+                                        data-bs-target="#mostrar14" id="bg-btn-alg">
+                                        *n
+                                    </button>
+                                    <div id="mostrar14" class="collapse">
+                                        <p>
+                                            <strong>De un número</strong>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex flex-column">
+                                    <button type="button" class="btn boton-alg" data-bs-toggle="collapse"
+                                        data-bs-target="#mostrar15" id="bg-btn-alg">
+                                        *
+                                    </button>
+                                    <div id="mostrar15" class="collapse">
+                                        <p>
+                                            <strong>Producto</strong>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex flex-column">
+                                    <button type="button" class="btn boton-alg d-flex justify-content-center pt-4"
+                                        data-bs-toggle="collapse" data-bs-target="#mostrar16" id="bg-btn-alg">
+                                        <p><math class="wrs_chemistry" xmlns="http://www.w3.org/1998/Math/MathML">
+                                                <msup>
+                                                    <mi mathvariant="normal">( n + 1 )</mi>
+                                                </msup>
+                                            </math></p>
+                                    </button>
+                                    <div id="mostrar16" class="collapse">
+                                        <p>
+                                            <strong>Del consecutivo del número</strong>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex flex-column">
+                                    <button type="button" class="btn boton-alg" data-bs-toggle="collapse"
+                                        data-bs-target="#mostrar17" id="bg-btn-alg">
+                                        / 3
+                                    </button>
+                                    <div id="mostrar17" class="collapse">
+                                        <p>
+                                            <strong>La tercera parte</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center" style="text-align: center;">
+                                <span>
+                                <h5 style="font-weight: bold;">Expresión algebraica</h5> <br>
+                                <h4>
+                                    <math class="wrs_chemistry" xmlns="http://www.w3.org/1998/Math/MathML">
+                                        <msup>
+                                          <mi>
+                                            2n *
+                                          </mi>
+                                        </msup>
+                                        <msup>
+                                          <mi mathvariant="normal">( n + 1) / 3</mi>
+                                        </msup>
+                                      </math>
+                                </h4>
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row container-fluid" id="Section2">
+                            <div class="d-flex justify-content-center align-items-center" id="Sb3Sld1">
+                                <h3 style="text-align: center;">
+                                    Frase: <br>
+                                    El triple de un número equivale al doble del mismo número aumentado en quince. 
+                                </h3>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center">
+
+                                <div class="d-flex flex-column">
+                                    <button type="button" class="btn boton-alg" data-bs-toggle="collapse"
+                                        data-bs-target="#mostrar18" id="bg-btn-alg">
+                                        3
+                                    </button>
+                                    <div id="mostrar18" class="collapse">
+                                        <p>
+                                            <strong>El triple</strong>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex flex-column">
+                                    <button type="button" class="btn boton-alg" data-bs-toggle="collapse"
+                                        data-bs-target="#mostrar19" id="bg-btn-alg">
+                                        *m
+                                    </button>
+                                    <div id="mostrar19" class="collapse">
+                                        <p>
+                                            <strong>De un número</strong>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex flex-column">
+                                    <button type="button" class="btn boton-alg" data-bs-toggle="collapse"
+                                        data-bs-target="#mostrar20" id="bg-btn-alg">
+                                        =
+                                    </button>
+                                    <div id="mostrar20" class="collapse">
+                                        <p>
+                                            <strong>Equivale</strong>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex flex-column">
+                                    <button type="button" class="btn boton-alg" data-bs-toggle="collapse"
+                                        data-bs-target="#mostrar21" id="bg-btn-alg">
+                                        2
+                                    </button>
+                                    <div id="mostrar21" class="collapse">
+                                        <p>
+                                            <strong>El doble</strong>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex flex-column">
+                                    <button type="button" class="btn boton-alg" data-bs-toggle="collapse"
+                                        data-bs-target="#mostrar22" id="bg-btn-alg">
+                                        *m
+                                    </button>
+                                    <div id="mostrar22" class="collapse">
+                                        <p>
+                                            <strong>Mismo número</strong>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex flex-column">
+                                    <button type="button" class="btn boton-alg" data-bs-toggle="collapse"
+                                        data-bs-target="#mostrar23" id="bg-btn-alg">
+                                        +
+                                    </button>
+                                    <div id="mostrar23" class="collapse">
+                                        <p>
+                                            <strong>Aumentado</strong>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex flex-column">
+                                    <button type="button" class="btn boton-alg" data-bs-toggle="collapse"
+                                        data-bs-target="#mostrar24" id="bg-btn-alg">
+                                        15
+                                    </button>
+                                    <div id="mostrar24" class="collapse">
+                                        <p>
+                                            <strong>En quince</strong>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="d-flex justify-content-center align-items-center" style="text-align: center;">
+                                <span>
+                                <h5 style="font-weight: bold;">Expresión algebraica</h5> <br>
+                                <h4>
+                                    <math class="wrs_chemistry" xmlns="http://www.w3.org/1998/Math/MathML">
+                                        <msup>
+                                          <mi>
+                                            3m =
+                                          </mi>
+                                        </msup>
+                                        <msup>
+                                          <mi mathvariant="normal"> 2m</mi>
+                                        </msup>
+                                        <msup>
+                                          <mi mathvariant="normal"> + 15</mi>
+                                        </msup>
+                                      </math>
+                                </h4>
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#subtema2" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true" id="prev-icon"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#subtema2" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+
+            </div>
+        </div>
+
+        <div class="container-fluid" id="Subtema1">
+            <div class="pt-3 d-flex justify-content-center">
+                <h3>Juega y aprende</h3>
+            </div>
+        </div>
+
+        <div class="row" id="Section1">
+            <div class="d-flex flex-column justify-content-center align-items-center" id="container-table" href="./index.html">
+                <h3>
+                    ¡Pon aprueba tus conocimientos!
+                </h3>
+                <br>
+                <p>
+                Has completado todos los temas de esta aplicación, ahora es momento de poner a prueba todo lo visto. 
+                </p>
+                <br>
+                <a href="./JuegoMenu.html" class="btn boton-alg" id="bg-btn-alg"><span>¡Vamos!</span></a>
+
+
+            </div>
+        </div>
+
+        <!---------------------------------------------------------------------------------------------------------------------------------------->
+        <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -125,14 +125,22 @@
 
 #Sb1{
   background: #00171f;
+  height: 22vh;
 }
 
 #Sb2{
   background-color: #003459;
+  height: 22vh;
 }
 
 #Sb3{
   background-color: #007ea7;
+  height: 22vh;
+}
+
+#Sb4{
+  background-color: #00a8e8;
+  height: 22vh;
 }
 
 #contentButton {
